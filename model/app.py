@@ -9,9 +9,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import re
 import fitz  # PyMuPDF for PDF extraction
+from flask_cors import CORS
 
 # Initialize the Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Ensure necessary NLTK data is downloaded
 download('punkt')
@@ -107,4 +109,4 @@ def check_cv():
 
 # Run the app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5002)
