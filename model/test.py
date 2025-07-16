@@ -1,7 +1,7 @@
 import requests
 
 # URL of the Flask app
-url = "http://127.0.0.1:5000/check_cv"  # Update if running on a different host/port
+url = "http://127.0.0.1:5002/check_cv"  # Update if running on a different host/port
 
 # File path to the PDF you want to upload
 pdf_file_path = "G:/GitHub/AI_Recruiter/model/data/ACCOUNTANT/11163645.pdf"  # Replace with the actual path to your PDF file
